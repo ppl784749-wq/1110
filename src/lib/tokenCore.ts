@@ -100,6 +100,7 @@ export async function deriveEthAccount(
 export interface EthTxSignResult {
   signature: string;
   txHash: string;
+  signedTx?: string;
 }
 
 export async function signEthTransaction(
