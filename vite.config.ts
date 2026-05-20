@@ -13,6 +13,9 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['@consenlabs/tcx-wasm'],
   },
+  build: {
+    chunkSizeWarningLimit: 2500,
+  },
   server: {
     headers: {
       'Cross-Origin-Opener-Policy': 'same-origin',
